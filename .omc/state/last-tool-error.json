@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"ls /home/mathe/projects/ | head -20\",\"description\":\"List projects directory\"}",
-  "error": "Path \"/home/mathe/projects/claude-adhd-harness\" does not exist",
-  "timestamp": "2026-04-21T09:31:26.341Z",
-  "retry_count": 2
-}
