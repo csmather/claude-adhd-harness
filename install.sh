@@ -2,14 +2,14 @@
 set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-HARNESS_DIR="$HOME/.claude/adhd-harness"
+INSTALL_DIR="$HOME/.claude/auto-titler"
 SETTINGS="$HOME/.claude/settings.json"
 
-mkdir -p "$HARNESS_DIR/hooks"
+mkdir -p "$INSTALL_DIR/hooks"
 
-install -m 0755 "$REPO_DIR/hooks/auto-title.py" "$HARNESS_DIR/hooks/auto-title.py"
+install -m 0755 "$REPO_DIR/hooks/auto-title.py" "$INSTALL_DIR/hooks/auto-title.py"
 
-python3 - "$SETTINGS" "$HARNESS_DIR/hooks/auto-title.py" <<'PY'
+python3 - "$SETTINGS" "$INSTALL_DIR/hooks/auto-title.py" <<'PY'
 import json, sys
 from pathlib import Path
 

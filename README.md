@@ -1,6 +1,6 @@
-# claude-code-auto-title
+# auto-titler
 
-A tiny `UserPromptSubmit` hook that sets a short, kebab-case session title from your first prompt — same effect as `/rename` with no args, but automatic. Makes `/resume` pickers and session UIs readable without manual effort.
+A tiny `UserPromptSubmit` hook that sets a short, kebab-case Claude Code session title from your first prompt — same effect as `/rename` with no args, but automatic. Makes `/resume` pickers and session UIs readable without manual effort.
 
 No LLM, no API key, no dependencies beyond Python stdlib.
 
@@ -10,7 +10,7 @@ No LLM, no API key, no dependencies beyond Python stdlib.
 ./install.sh
 ```
 
-Copies the hook into `~/.claude/adhd-harness/hooks/` and registers it in `~/.claude/settings.json` as a `UserPromptSubmit` hook. Idempotent — safe to re-run.
+Copies the hook into `~/.claude/auto-titler/hooks/` and registers it in `~/.claude/settings.json` as a `UserPromptSubmit` hook. Idempotent — safe to re-run.
 
 ## How it works
 
@@ -45,7 +45,7 @@ Constants at the top of `hooks/auto-title.py`:
 ## Uninstall
 
 - Remove the `auto-title` entry from `hooks.UserPromptSubmit` in `~/.claude/settings.json`.
-- `rm -rf ~/.claude/adhd-harness`.
+- `rm -rf ~/.claude/auto-titler`.
 
 ## Known limits
 
