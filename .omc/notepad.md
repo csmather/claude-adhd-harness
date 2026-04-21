@@ -3,7 +3,11 @@
 
 ## Priority Context
 <!-- ALWAYS loaded. Keep under 500 chars. Critical discoveries only. -->
-claude-adhd-harness: portable plugin that catches user's drift patterns in the 45sec between noticing and redirecting. NOT a lecture system — a tap on the shoulder. Self-awareness is already high. Detect patterns #1,4,6,8 aggressively; #2,5 cautiously; #9,10 need session-level rituals not per-turn hooks. See memory/user_work_patterns.md for the pattern list.
+claude-adhd-harness: portable plugin catching drift in the 45sec between noticing and redirecting. Tap, not lecture. Patterns #1,4,6,8 aggressive; #2,5 cautious; #9,10 session-level. See memory/user_work_patterns.md.
+
+Open followups (each a fresh session):
+1. Semantic-match for nudge hook — word-overlap false-positives on-topic prompts (MIN_PROMPT_WORDS now 4).
+2. Auto-anchor from first session prompt, claude.ai-title style — reduce need for manual /anchor.
 
 ## Working Memory
 <!-- Session notes. Auto-pruned after 7 days. -->

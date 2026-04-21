@@ -31,15 +31,27 @@
   "directoryMap": {},
   "hotPaths": [
     {
-      "path": "bin/anchor.py",
-      "accessCount": 1,
-      "lastAccessed": 1776751158958,
+      "path": "install.sh",
+      "accessCount": 3,
+      "lastAccessed": 1776759570322,
       "type": "file"
     },
     {
       "path": "hooks/notice.py",
+      "accessCount": 2,
+      "lastAccessed": 1776757534857,
+      "type": "file"
+    },
+    {
+      "path": "hooks/auto-title.py",
+      "accessCount": 2,
+      "lastAccessed": 1776759519311,
+      "type": "file"
+    },
+    {
+      "path": "bin/anchor.py",
       "accessCount": 1,
-      "lastAccessed": 1776751171236,
+      "lastAccessed": 1776751158958,
       "type": "file"
     },
     {
@@ -52,12 +64,6 @@
       "path": "skills/nudge/SKILL.md",
       "accessCount": 1,
       "lastAccessed": 1776751179829,
-      "type": "file"
-    },
-    {
-      "path": "install.sh",
-      "accessCount": 1,
-      "lastAccessed": 1776751185383,
       "type": "file"
     },
     {

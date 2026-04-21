@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """notice.py — UserPromptSubmit hook. Nudges when the prompt drifts from the anchor."""
+
 import hashlib
 import json
 import os
@@ -11,14 +12,16 @@ from pathlib import Path
 ANCHOR_DIR = Path.home() / ".claude" / "adhd-harness" / "anchors"
 NUDGE_SKILL = Path.home() / ".claude" / "skills" / "nudge" / "SKILL.md"
 
-MIN_PROMPT_WORDS = 8
+MIN_PROMPT_WORDS = 4
 OVERLAP_THRESHOLD = 0.20
 NUDGE_COOLDOWN_SEC = 5 * 60
 
-STOPWORDS = set("""a an the and or but if then so of to in on at for with by from as is are was were be been being do
+STOPWORDS = set(
+    """a an the and or but if then so of to in on at for with by from as is are was were be been being do
 does did have has had i you he she it we they me my your our their this that these those what which who whom whose
 when where why how can could will would should may might must shall not no yes just like about into out up down
-over under again further more most some any all each every one two three ok okay yeah yep nope nah hey hi""".split())
+over under again further more most some any all each every one two three ok okay yeah yep nope nah hey hi""".split()
+)
 
 
 def tokenize(text: str) -> set:
@@ -102,7 +105,7 @@ def main() -> None:
     policy = NUDGE_SKILL.read_text() if NUDGE_SKILL.exists() else ""
 
     print(f"""<adhd-harness-nudge>
-Active anchor (set {age}): "{anchor['text']}"
+Active anchor (set {age}): "{anchor["text"]}"
 Word-overlap with this prompt: {pct}% (threshold {int(OVERLAP_THRESHOLD * 100)}%).
 
 {policy}
