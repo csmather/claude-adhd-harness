@@ -32,8 +32,14 @@
   "hotPaths": [
     {
       "path": "install.sh",
-      "accessCount": 3,
-      "lastAccessed": 1776759570322,
+      "accessCount": 7,
+      "lastAccessed": 1776763596039,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 5,
+      "lastAccessed": 1776763606805,
       "type": "file"
     },
     {
@@ -64,12 +70,6 @@
       "path": "skills/nudge/SKILL.md",
       "accessCount": 1,
       "lastAccessed": 1776751179829,
-      "type": "file"
-    },
-    {
-      "path": "README.md",
-      "accessCount": 1,
-      "lastAccessed": 1776751197861,
       "type": "file"
     }
   ],
