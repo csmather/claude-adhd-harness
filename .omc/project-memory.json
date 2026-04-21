@@ -1,0 +1,71 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1776745380487,
+  "projectRoot": "/home/mathe/projects/claude-adhd-harness",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {},
+  "hotPaths": [
+    {
+      "path": "bin/anchor.py",
+      "accessCount": 1,
+      "lastAccessed": 1776751158958,
+      "type": "file"
+    },
+    {
+      "path": "hooks/notice.py",
+      "accessCount": 1,
+      "lastAccessed": 1776751171236,
+      "type": "file"
+    },
+    {
+      "path": "skills/anchor/SKILL.md",
+      "accessCount": 1,
+      "lastAccessed": 1776751175700,
+      "type": "file"
+    },
+    {
+      "path": "skills/nudge/SKILL.md",
+      "accessCount": 1,
+      "lastAccessed": 1776751179829,
+      "type": "file"
+    },
+    {
+      "path": "install.sh",
+      "accessCount": 1,
+      "lastAccessed": 1776751185383,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 1,
+      "lastAccessed": 1776751197861,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}
